@@ -1,0 +1,20 @@
+[project]
+name = "check_os_ver"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "vhzkclq0705", email = "vhzkclq0705@naver.com"},
+    {name = "vhzkclq0705", email = "dhwns1513@gmail.com"},
+]
+dependencies = []
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = true
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
