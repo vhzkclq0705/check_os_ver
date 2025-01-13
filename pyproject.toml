@@ -18,3 +18,7 @@ distribution = true
 [build-system]
 requires = ["pdm-backend"]
 build-backend = "pdm.backend"
+
+[project.urls]
+Homepage = "https://github.com/vhzkclq0705/check_os_ver"
+Issues = "https://github.com/vhzkclq0705/check_os_ver/issues"
