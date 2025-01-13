@@ -1,8 +1,15 @@
 # check_os_ver
 
 
-### Development environment settings
+### Use
+```python
+$ pip install check_os_ver
+$ python
+>>> from check_os_ver.hi import hi
+>>> hi()
+```
 
+### Development environment settings
 ```bash
 # install PDM
 # git clone ...
