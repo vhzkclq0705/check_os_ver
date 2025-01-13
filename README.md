@@ -7,4 +7,5 @@
 # install PDM
 # git clone ...
 $ source .venv/bin/activate
+$ pdm install
 ```
