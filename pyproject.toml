@@ -6,7 +6,17 @@ authors = [
     {name = "vhzkclq0705", email = "vhzkclq0705@naver.com"},
     {name = "vhzkclq0705", email = "dhwns1513@gmail.com"},
 ]
-dependencies = []
+dependencies = [
+    "check_os_ver",
+    "cho-check-os-ver",
+    "hj-check-os-version",
+    "jacob-os-version-check",
+    "lucas-check-os-ver",
+    "nunininu-check-os-ver",
+    "ppabam-check-os-ver>=0.2.0",
+    "seo-check-os-version",
+    "stundrg-check-os-ver"
+]
 requires-python = ">=3.10"
 readme = "README.md"
 license = {text = "MIT"}
