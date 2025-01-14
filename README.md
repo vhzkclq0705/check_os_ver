@@ -77,7 +77,7 @@ $ git push
 $ pdm publish
 
 View at:
-https://pypi.org/project/check_os_ver/0.4.0/
+https://pypi.org/project/check_os_ver/0.4.1/
 
 # PR - Merge
 # Tag - Release
