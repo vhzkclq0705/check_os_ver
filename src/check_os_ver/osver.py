@@ -1,4 +1,14 @@
 import subprocess
+import sys
+
+# OS를 확인하는 함수(macOS, Lunux만 구현)
+def get_os_version() -> str:
+    if sys.platform == "darwin":
+        return get_os_version_of_mac()
+    elif sys.platform.startswith("linux"):
+        return get_os_version_of_linux()
+    else:
+        return "Unsupported platform"
 
 # OS가 Linux인 경우 처리하는 함수
 def get_os_version_of_linux() -> str:
