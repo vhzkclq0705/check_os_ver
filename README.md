@@ -66,4 +66,23 @@ $ git add <FILE_NAME>
 $ git commit -a
 $ git push
 $ pdm publish
+
+View at:
+https://pypi.org/project/check_os_ver/0.3.0/
+
+# PR - Merge
+# Tag - Release
 ```
+
+### TEST
+```bash
+# $ pdm add -dG test pytest pytest-cov
+$ pytest
+$ pytest -s
+$ pytest --cov
+```
+
+### Ref
+- https://pdm-project.org/en/latest/
+- https://packaging.python.org/en/latest/tutorials/packaging-projects/
+- console_scripts
