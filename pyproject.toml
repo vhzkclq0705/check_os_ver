@@ -32,3 +32,10 @@ build-backend = "pdm.backend"
 [project.urls]
 Homepage = "https://github.com/vhzkclq0705/check_os_ver"
 Issues = "https://github.com/vhzkclq0705/check_os_ver/issues"
+
+[project.scripts]
+jerry-hi = "check_os_ver.hi:hi"
+jerry-random-pic = "check_os_ver.hi:random_pic"
+jerry-random-game = "check_os_ver.hi:random_game"
+jerry-random-match = "check_os_ver.hi:random_match"
+jerry-os-ver = "check_os_ver.osver:get_os_pretty_name"
