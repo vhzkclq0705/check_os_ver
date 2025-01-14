@@ -6,7 +6,7 @@ from check_os_ver.osver import get_os_version
 def test_on_mac():
     print("Running on macOS")
 
-@pytest.mark.skipif(not sys.platform.startswith("Linux"), reason="Only runs on Linux")
+@pytest.mark.skipif(not sys.platform.startswith("linux"), reason="Only runs on Linux")
 def test_on_linux():
     print("Running on Linux")
 
