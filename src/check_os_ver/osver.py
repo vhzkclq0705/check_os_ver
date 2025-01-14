@@ -1,5 +1,14 @@
 import subprocess
 
+# OS가 Linux인 경우 처리하는 함수
+def get_os_version_of_linux() -> str:
+    with open('/etc/os-release', 'r') as file:
+        for line in file:
+            if line.startswith('PRETTY_NAME'):
+                return line.split('=')[1].replace('\n','').strip("\"")
+    return None
+
+# OS가 mac인 경우 처리하는 함수
 def get_os_version_of_mac() -> str:
     # 파이썬에서 터미널 명령어를 실행하고 결과를 원하는 형태로 변경하는 함수
     def get_macro_reply(command):
