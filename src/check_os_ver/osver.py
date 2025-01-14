@@ -8,7 +8,7 @@ def get_os_version() -> str:
     elif sys.platform.startswith("linux"):
         return get_os_version_of_linux()
     else:
-        return "Unsupported platform"
+        return None
 
 # OS가 Linux인 경우 처리하는 함수
 def get_os_version_of_linux() -> str:

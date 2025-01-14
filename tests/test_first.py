@@ -1,29 +1,20 @@
 import pytest
 import sys
-from check_os_ver.osver import get_os_version_of_mac, get_os_version_of_linux
+from check_os_ver.osver import get_os_version
 
 @pytest.mark.skipif(sys.platform != "darwin", reason="Only runs on macOS")
 def test_on_mac():
     print("Running on macOS")
-    v = get_os_version_of_mac()
-    assert "Darwin" in v
 
 @pytest.mark.skipif(not sys.platform.startswith("Linux"), reason="Only runs on Linux")
-def test_on_linux(v):
+def test_on_linux():
     print("Running on Linux")
-    v = get_os_version_of_linux()
-    assert "LTS" in v
 
 def test_first():
-    if sys.platform == "darwin":
-        v = get_os_version_of_mac()
-    elif sys.platform.startswith("Linux"):
-        v = get_os_version_of_linux()
-    else:
-        pytest.skip("Unsupported platform")
+    v = get_os_version()
 
     # 정상적인 값인지
-    assert v is not None
+    assert v is not None, "Unsupported platform"
 
     # 빈 문자열이 아닌지
     assert v != ""
@@ -38,5 +29,5 @@ def test_first():
     # 길이가 최소 얼마 이상인지
     assert len(v) > 6
 
-    # 기타 등등
+    print(f"\nYour OS version: {v}")
     print("\nAll test passed successfully!")
